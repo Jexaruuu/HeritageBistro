@@ -60,7 +60,7 @@ $userid = $_SESSION['userid'];
 
         </div>
        
-        <!-- <h2>Welcome, <?php echo $username , $userid; ?>!</h2>
+        <!-- <h2>Welcome, <?php echo $username ; ?>!</h2>
         <h2>FOR ORDERS</h2>
         <a href="OrderAdd.php">Add New Order</a>
         <a href="OrderDisplay.php">View Orders</a>

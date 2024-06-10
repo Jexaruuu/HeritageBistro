@@ -53,7 +53,7 @@ $userid = $_SESSION['userid'];
             <div class="welcome-header">
 
                 <div class="welcome">
-                    <h>Welcome, <?php echo $username , $userid; ?>!</h> 
+                    <h>Welcome, <?php echo $username; ?>!</h> 
                     <p> How's your day?</p>
 
                 </div>

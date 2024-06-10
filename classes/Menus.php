@@ -15,9 +15,9 @@ class Menus
         
       // Commenting out the directory creation
         
-        if (!is_dir($target_dir)) {
-            mkdir($target_dir, 0777, true);
-        }
+        // if (!is_dir($target_dir)) {
+        //     mkdir($target_dir, 0777, true);
+        // } 
         
 
         $image = basename($file['name']);
