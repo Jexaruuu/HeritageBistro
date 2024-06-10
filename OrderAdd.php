@@ -136,7 +136,7 @@ if (isset($_POST['btn'])) {
                                 <?php foreach ($MenuList as $menu) { ?>
                                     <div class="menu-item card" data-category="<?php echo $menu['category']; ?>" onclick="selectMenu(<?php echo $menu['id']; ?>, '<?php echo $menu['menu_name']; ?>', <?php echo $menu['price']; ?>, '<?php echo $menu['image']; ?>')">
                                         <div class="card-img">
-                                            <img src="./img/<?php echo $menu['image']; ?>" alt="User Image" class="rounded-circle img-fluid" width="100">
+                                            <img src="./uploads/<?php echo $menu['image']; ?>" alt="User Image" class="rounded-circle img-fluid" width="100">
                                         </div>
                                         <div class="card-body">
                                             <h class="card-title"><?php echo $menu['menu_name']; ?></h>
@@ -202,7 +202,7 @@ if (isset($_POST['btn'])) {
             newCard.innerHTML = `
                 <div class="card-body-invoice">
                     <div class="card-img-invoice">
-                        <img src="./img/${image}" alt="Menu Image" class="rounded-circle img-fluid" width="100">
+                        <img src="./uploads/${image}" alt="Menu Image" class="rounded-circle img-fluid" width="100">
                     </div>
                     <div class="card-invoice">
                         <div class="shanghai">

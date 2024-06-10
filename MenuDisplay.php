@@ -45,7 +45,7 @@ $userid = $_SESSION['userid'];
 
            <div class="food-card-image" >
     <?php if ($menu['image']) { ?>
-        <img src="/JEXTERDIAYKA/jexterfile/HeritageBistro/img/<?php echo $menu['image']; ?>" alt="User Image" class="food-rounded-circle food-img-fluid" width="100" style="object-fit: cover; width: 100%; height: 100%;">
+        <img src="./uploads/<?php echo $menu['image']; ?>" alt="User Image" class="food-rounded-circle food-img-fluid" width="100" style="object-fit: cover; width: 100%; height: 100%;">
     <?php } else { ?>
         <p>No Image</p>
     <?php } ?>

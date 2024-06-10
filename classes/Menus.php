@@ -11,14 +11,14 @@ class Menus
         $price = $data['price'];
         $category = $data['category'];
 
-        $target_dir = $_SERVER['DOCUMENT_ROOT'] . './JEXTERDIAYKA/jexterfile/HeritageBistro/img/';
+        $target_dir = $_SERVER['DOCUMENT_ROOT'] . './HeritageBistro/uploads/';
         
       // Commenting out the directory creation
-        /*
+        
         if (!is_dir($target_dir)) {
             mkdir($target_dir, 0777, true);
         }
-        */
+        
 
         $image = basename($file['name']);
         $target_file = $target_dir . $image;
