@@ -20,7 +20,7 @@ $Account -> checkUser($_REQUEST);
 <h class="mb-4">Welcome! </h>
 <form method="POST">
     <div class="form-outline">
-      <label class="form-label" for="username">Username</label><br/>
+      <label class="form-label" for="username">User</label><br/>
         <input type="text" id="username" name="username" class="form-control" placeholder="Username"/>
       </div>
       <div class="form-outline">
