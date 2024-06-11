@@ -1,5 +1,5 @@
 <?php 
-include ('includes/header.php');
+include ('LoginInclude/header.php');
 include('classes/Accounts.php'); 
 $Account = new Accounts();
 if (isset ($_REQUEST['btn']))
@@ -17,7 +17,7 @@ $Account -> checkUser($_REQUEST);
       <div class="logo">
         <img src='./img/HB 1.png' id="logo" alt=''> 
       </div>
-<h class="mb-4">Welcome! </h>
+<h class="mb-4">Welcome to Heritage Bistro - Where Tradition Meets Taste. </h>
 <form method="POST">
     <div class="form-outline">
       <label class="form-label" for="username">Username</label><br/>
@@ -30,7 +30,7 @@ $Account -> checkUser($_REQUEST);
       <input type="submit" value="Login" name = "btn" id = "btn" class="btn mb-2">
     </form>
     <div class="create-account">
-      Don't have an Account? <a href="Signup.php">Create Account</a>
+      Don't have an Account? <br><a href="Signup.php">Create Account</a>
     </div>
 
     </div>
