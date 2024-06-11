@@ -28,6 +28,18 @@ $DB->connectDB();
     justify-content: center;
     flex-direction: column;
 }
+.form-bg {
+    width: 23%;
+    height: 90%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+}
 
 .logo img {
     display: flex;
@@ -83,11 +95,10 @@ $DB->connectDB();
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5%;
     padding: 5%;
     width: 100%;
+    max-width: 600px;
     height: auto; 
-    max-height: 700px;
     background-color: rgba(255, 255, 255, 0.8); 
     backdrop-filter: blur(4px);
     border-radius: 10px;

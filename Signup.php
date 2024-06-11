@@ -15,6 +15,7 @@ if(isset($_POST['btn'])) {
 ?>
 <div class="login-container">
 
+    <div class="form-bg">
     <div class="form-wrapper-signup">
 
 <div class="content-signup w-25">
@@ -68,7 +69,7 @@ if(isset($_POST['btn'])) {
           <input type="submit" value="Register" name = "btn" id = "btn" class="btn ms-2 mb-2 w-25">
             </form>
             <div class="create-account">
-              Already have an Account? <a href="login.php">Login your account</a>
+              Already have an Account? <br><a href="login.php">Login your account</a>
             </div>
 
       </div>
