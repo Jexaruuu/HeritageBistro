@@ -28,44 +28,32 @@ if(isset($_POST['btn'])) {
 <form method="POST" enctype="multipart/form-data">
     <div class="row mb-1">
 
-    <div class="last-first">
-
           <div class="form-outline">
-            <label class="form-label" for="first_name">First Name</label><br/>
-            <input type="text" id="first_name" name="first_name" class="form-control" placeholder="First Name"/>
-          
+            <label class="form-label" for="first_name">First Name :</label><br/>
+            <input type="text" id="first_name" name="first_name" class="form-control" placeholder="Enter first name"/>
      
       </div>
 
-          
               <div class="form-outline">
-                <label class="form-label" for="last_name">Last name</label><br/>
-                <input type="text" id="last_name" name="last_name" class="form-control" placeholder="Lastname"/>
+                <label class="form-label" for="last_name">Last name :</label><br/>
+                <input type="text" id="last_name" name="last_name" class="form-control" placeholder="Enter last name"/>
               </div>
         
-
     </div>
 
-     
-
-      <div class="last-first">
         <div class="form-outline">
-          <label class="form-label" for="username">Username</label><br/>
-            <input type="text" id="username" name="username" class="form-control" placeholder="Username"/>
+          <label class="form-label" for="username">Username :</label><br/>
+            <input type="text" id="username" name="username" class="form-control" placeholder="Enter username"/>
           </div>
+
           <div class="form-outline">
-            <label class="form-label" for="password">Password</label><br/>
-            <input type="password" id="password" name="password" class="form-control" placeholder="Password"/>
+            <label class="form-label" for="password">Password :</label><br/>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Enter password"/>
           </div>
 
           </div>
           <div class="form-outline">
-            <label class="form-label" for="role">Account Type</label><br/>
-                <select name="role" id="role">
-                  <option value=0>Administrator</option>
-                  <option value=1>Staff</option>
-                </select>
-              </div>
+         
           <input type="submit" value="Register" name = "btn" id = "btn" class="btn ms-2 mb-2 w-25">
             </form>
             <div class="create-account">

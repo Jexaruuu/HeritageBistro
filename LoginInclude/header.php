@@ -48,7 +48,8 @@ $DB->connectDB();
 
 .form-login h {
     font-size: 14px;
-    color:#ffffff;
+    color:#221E1F;
+    font-weight: 600;
 }
 
 .create-account {
@@ -92,7 +93,7 @@ $DB->connectDB();
     width: 75%;
     height: auto; 
     max-height: 700px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(210, 180, 140, 0.8);
     backdrop-filter: blur(4px);
     border-radius: 10px;
     flex-direction: column;
@@ -105,7 +106,7 @@ $DB->connectDB();
     width: 80%;
     width: 300px;
     height: 40px;
-    border-radius: 4px;
+    border-radius: 10px;
     border: none;
     font-size: 20px;
     text-transform: uppercase;
@@ -118,11 +119,12 @@ $DB->connectDB();
 
 .form-outline {
     margin-top: 5%;
-    color: #221E1F;
+    color: #ffffff;
 }
 .form-outline input {
     width: 300px;
     height: 40px;
+    border-radius: 10px;
 }
 
 .last-first {

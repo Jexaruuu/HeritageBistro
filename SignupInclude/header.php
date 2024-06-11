@@ -30,13 +30,13 @@ $DB->connectDB();
 }
 .form-bg {
     width: 23%;
-    height: 90%;
+    height: 84%;
     float: left;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(210, 180, 140, 0.8);
     backdrop-filter: blur(4px);
     border-radius: 10px;
 }
@@ -60,19 +60,18 @@ $DB->connectDB();
 
 .form-login h {
     font-size: 14px;
-    color: #ffffff;
-}
-
-.create-account {
-    margin-top: 5%;
-    font-size: 1.5vw; 
-    text-align: center; 
-}
-
-.create-account {
     color: #221E1F;
-    font-size: 16px;
+    font-weight: 600;
 }
+
+.create-account {
+            text-align: center;
+            margin-top: 15px;
+            margin-left: 41px;
+            width: fit-content;
+            font-size: 16px;
+            color: #221E1F;
+        }
 
 .create-account a {
     text-decoration: none;
@@ -99,8 +98,6 @@ $DB->connectDB();
     width: 100%;
     max-width: 600px;
     height: auto; 
-    background-color: rgba(255, 255, 255, 0.8); 
-    backdrop-filter: blur(4px);
     border-radius: 10px;
     flex-direction: column;
 }
@@ -112,7 +109,7 @@ $DB->connectDB();
     width: 80%;
     width: 300px;
     height: 40px;
-    border-radius: 4px;
+    border-radius: 10px;
     border: none;
     font-size: 20px;
     text-transform: uppercase;
@@ -126,12 +123,13 @@ $DB->connectDB();
 
 .form-outline {
     margin-top: 5%;
-    color: #221E1F;
+    color: #ffffff;
 }
 
 .form-outline input {
     width: 300px;
     height: 40px;
+    border-radius: 10px;
 }
 
 .last-first {
