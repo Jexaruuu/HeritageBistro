@@ -20,12 +20,12 @@ $Account -> checkUser($_REQUEST);
 <h class="mb-4">Welcome! </h>
 <form method="POST">
     <div class="form-outline">
-      <label class="form-label" for="username">User</label><br/>
-        <input type="text" id="username" name="username" class="form-control" placeholder="Username"/>
+      <label class="form-label" for="username">Username</label><br/>
+        <input type="text" id="username" name="username" class="form-control" placeholder="Enter Username"/>
       </div>
       <div class="form-outline">
         <label class="form-label" for="password">Password</label><br/>
-        <input type="password" id="password" name="password" class="form-control" placeholder="Password"/>
+        <input type="password" id="password" name="password" class="form-control" placeholder="Enter Password"/>
       </div>
       <input type="submit" value="Login" name = "btn" id = "btn" class="btn mb-2">
     </form>
