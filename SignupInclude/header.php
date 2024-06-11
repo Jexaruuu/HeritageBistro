@@ -10,123 +10,126 @@ $DB->connectDB();
     <title>Heritage Bistro Restaurant Management System</title>
 </head>
 <style>
-   *{
-
-margin: 0%;
-padding: 0%;
-box-sizing: border-box;
-font-family: 'Poppins';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
 }
 
-.login-container{
-
-width: 100%;
-height: 100vh;
-background-size: cover;
-background-repeat: no-repeat;
-background-image: url('/HeritageBistro/img/Login&SignupBG.jpg');
-  display: flex;
+.login-container {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('/HeritageBistro/img/Login&SignupBG.jpg');
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.form-wrapper-signup{
-
-padding: 5%;
-width: 50%;
-height: 100vh;
-display: flex;
-align-items: center;
-justify-content: center;
-
+.logo img {
+    display: flex;
+    align-items: center;
+    margin-left: 2vw;
 }
 
-.form-login h{
-
-
-font-size: 25px;
+.form-wrapper {
+    padding: 5%;
+    width: 80%;
+    max-width: 600px;
+    height: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.create-account{
-
-margin-top: 5%;
-font-size: 15px;
-
+.form-login h {
+    font-size: 14px;
+    color: #ffffff;
 }
 
-#id { 
-
-filter: grayscale(100%);
-
+.create-account {
+    margin-top: 5%;
+    font-size: 1.5vw; 
+    text-align: center; 
 }
 
-.create-account a{
-
-text-decoration: none;
-list-style: none;
-color: #9E0505;
-font-weight: 500;
-}
-#username, #password ,#first_name ,#last_name{
-width: 300px;
-height: 50px;
-padding: 3%;
-border-radius: 4px;
-margin-top: 1%;
-
-border: 1px solid rgba(46, 46, 46, 0.2); /* Adding border with low opacity */
+.create-account {
+    color: #221E1F;
+    font-size: 16px;
 }
 
-
-.content-signup{
-display: flex;
-align-items: center;
-justify-content: center;
-margin-top: 5;
-padding: 5%;
-width: 300%;
-height: 700px;
-background-color: #ffffff;
-border-radius: 10px;
+.create-account a {
+    text-decoration: none;
+    list-style: none;
+    color: #ffffff;
+    font-size: 16px;
 }
 
-.btn{
-margin-top: 5%;
-color: #ffffff;
-background-color: #9E0505;
-  width: 300px;
-height: 50px;
- border-radius: 4px;
- border: none;
- font-size: 20px;
- text-transform: uppercase;
- cursor: pointer;
+.form-control {
+    width: 80%;
+    max-width: 300px;
+    height: 50px;
+    padding: 2.5%; 
+    border-radius: 4px;
+    margin-top: 1%;
+    border: 1px solid rgba(46, 46, 46, 0.2);
 }
 
-.form-outline{
-
-margin-top: 5%;
-margin-right: 5%;
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    padding: 5%;
+    width: 100%;
+    height: auto; 
+    max-height: 700px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    flex-direction: column;
 }
 
-.last-first{
-
-
-display: flex;
-
+.btn {
+    margin-top: 7%;
+    color: #ffffff;
+    background-color: #221E1F;
+    width: 80%;
+    width: 300px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
 }
-select{
-width: 200px;
-height: 30px;
-border-radius: 5px;
-padding: 1%;
 
+.btn:hover {
+    background-color: #4b4144;
+    transition: 0.5s;
 }
 
-</style>
+.form-outline {
+    margin-top: 5%;
+    color: #221E1F;
+}
 
+.form-outline input {
+    width: 300px;
+    height: 40px;
+}
 
+.last-first {
+    display: flex;
+    flex-direction: column; 
+    width: 80%;
+    max-width: 300px;
+    gap: 1vw; 
+}
 </style>
 <body>
     <div class="row w-100" id="mainBody">
