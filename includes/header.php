@@ -9,8 +9,6 @@ $DB->connectDB();
 <head>
     <title>Heritage Bistro Restaurant Management System</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/ForLogin.css">
-    <link rel="stylesheet" type="text/css" href="css/signup.css">
     <link rel="stylesheet" type="text/css" href="css/addmenu.css">
     <link rel="stylesheet" type="text/css" href="css/MenuUpdateView.css">
     

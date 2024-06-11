@@ -32,14 +32,14 @@ $DB->connectDB();
 .logo img {
     display: flex;
     align-items: center;
-    margin-left: 2vw; /* Adjusted to relative unit */
+    margin-left: 2vw;
 }
 
 .form-wrapper {
     padding: 5%;
     width: 80%;
     max-width: 600px;
-    height: auto; /* Adjusted to allow flexibility */
+    height: auto; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,8 +53,8 @@ $DB->connectDB();
 
 .create-account {
     margin-top: 5%;
-    font-size: 1.5vw; /* Adjusted to relative unit */
-    text-align: center; /* Centered text for responsiveness */
+    font-size: 1.5vw; 
+    text-align: center; 
 }
 
 #id { 
@@ -77,7 +77,7 @@ $DB->connectDB();
     width: 80%;
     max-width: 300px;
     height: 50px;
-    padding: 2.5%; /* Adjusted for padding */
+    padding: 2.5%; 
     border-radius: 4px;
     margin-top: 1%;
     border: 1px solid rgba(46, 46, 46, 0.2);
@@ -109,6 +109,11 @@ $DB->connectDB();
     border: none;
     font-size: 20px;
     text-transform: uppercase;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #4b4144;
+    transition: 0.5s;
 }
 
 .form-outline {
@@ -122,10 +127,10 @@ $DB->connectDB();
 
 .last-first {
     display: flex;
-    flex-direction: column; /* Adjusted to column for better stacking on small screens */
+    flex-direction: column; 
     width: 80%;
     max-width: 300px;
-    gap: 1vw; /* Added gap for spacing */
+    gap: 1vw; 
 }
 
 </style>

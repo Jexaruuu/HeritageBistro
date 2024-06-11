@@ -1,6 +1,6 @@
 
 <?php 
-include('includes/header.php'); 
+include('SignupInclude/header.php'); 
 include('classes/Accounts.php'); 
 $Account = new Accounts();
 if(isset($_POST['btn'])) {
