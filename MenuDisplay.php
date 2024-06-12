@@ -1,5 +1,6 @@
 <?php
 include ('includes/header.php');
+include ('MenuDisplayInclude/header.php');
 include ('classes/Menus.php');
 
 $Menu = new Menus();
@@ -28,7 +29,7 @@ $userid = $_SESSION['userid'];
     </div>
     <div class="right-content">
 
-<div class="welcome-header-food" style="border-bottom: 1px solid rgba(0, 0, 0, 0.55); margin-bottom: 5px;" >
+<div class="welcome-header-food">
     <div class="welcome-food" >
         <h>Welcome, <?php echo $username; ?>!</h>
         <p>View your menu</p>
@@ -57,7 +58,7 @@ $userid = $_SESSION['userid'];
 
             <h class="food-card-title"> <?php echo $menu['menu_name']; ?></h>
            
-            <p class="food-card-text-price"><?php echo $menu['price']; ?></p>
+            <p class="food-card-text-price"><?php echo $menu['price']; ?><span>Php</span></p>
 
             <p class="food-card-text">
               <?php echo $menu['category']; ?> </p>

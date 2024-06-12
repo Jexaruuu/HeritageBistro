@@ -6,10 +6,17 @@
 }
 
 
-.index-parent{
-
-  display: flex;
+.index-parent {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/HeritageBistro/img/Login&SignupBG.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
 }
+
 
 
 .left-navigation{
@@ -24,25 +31,29 @@
 
 }
 
-
 .reservation-button, .makeorder-button, .vieworder-button{
 
 
-    width: 400px;
-    height: 350px;
-    background-color: brown;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(210, 180, 140, 0.8);
+    backdrop-filter: blur(4px);
     border-radius: 10px;
-    margin: 1%;
-      display: flex;
+    margin: 5%;
+    display: flex;
     align-items: center;
- 
     justify-content: center;
+    font-size: medium;
+    font-weight: 600;
 
 }
 
-.reservation-button{
+.reservation-button:hover{
 
        cursor: pointer;
+       background-color: rgba(34, 30, 31, 0.8);
+       transition: 0.3s;
+       
 }
 
 .reservation-makeorder-vieworder a{
