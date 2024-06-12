@@ -29,7 +29,7 @@ if(isset($_POST['btn'])) {
     <div class="row mb-1">
 
           <div class="form-outline">
-            <label class="form-label" for="first_name">First Name :</label><br/>
+            <label class="form-label" for="first_name">First name :</label><br/>
             <input type="text" id="first_name" name="first_name" class="form-control" placeholder="Enter first name"/>
      
       </div>

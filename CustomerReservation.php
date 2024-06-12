@@ -111,7 +111,7 @@ Gourmet City, FL 56789 </p>
                         <div class="phone_guest">
                             <div class="phonenumber">
                                 <label for="phone_number">Phone Number:</label><br/>
-                                <input type='tel' id='phone_number' name='phone_number' pattern="[0-9]{10}" required/>
+                                <input type='tel' id='phone_number' name='phone_number' pattern="[0-9]{11}" required/>
 
                             </div>
 

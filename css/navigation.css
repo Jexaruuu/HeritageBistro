@@ -169,29 +169,34 @@ a{
    
     cursor: pointer;
   
-    background: #ff7b8f;
+    background: #221E1F;
     height: 50px;
     padding-top: 5%;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 5%;
     width: 100%;
-    color: #000;
+    color: #ffffff;
     align-items: center;
      align-self:  last baseline; 
  
+}
+.logout:hover {
+    background-color: #4b4144;
+    transition: 0.5s;
 }
 
 .logout_text{
 
    margin-top: 5px;
    margin-right: 5%;
+   color: #ffffff;
    
    
 }
 
 .logout_text a {
 
-    color: black;
+    color: #ffffff;
 }
 
 .logout-parent{

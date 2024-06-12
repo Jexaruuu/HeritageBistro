@@ -8,33 +8,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/sidetabs.css"/>
+    <link rel="stylesheet" href="./css/navigation.css"/>
     <script>
-        // Function to set the active navlink
+     
         function setActiveNavLink(id) {
-            // Remove active class from all navlinks
+    
             const navlinks = document.querySelectorAll('.navlinks');
             navlinks.forEach(link => link.classList.remove('active'));
 
-            // Add active class to the current navlink
+
             document.getElementById(id).classList.add('active');
 
-            // Store the active navlink in localStorage
             localStorage.setItem('activeNavLink', id);
         }
 
-        // Function to load the active navlink from localStorage on page load
         function loadActiveNavLink() {
             const activeNavLink = localStorage.getItem('activeNavLink');
             if (activeNavLink) {
                 document.getElementById(activeNavLink).classList.add('active');
             } else {
-                // Default to the first navlink if no active link is found
+               
                 document.getElementById('active-events').classList.add('active');
             }
         }
 
-        // Call loadActiveNavLink when the page loads
         window.onload = loadActiveNavLink;
 
         function MenuAdd() {
@@ -58,9 +55,45 @@
         }
     </script>
 
-   <style>
+<style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .parents{
+            background-color: #C4A27A;
+            border: #221E1F;
+        }
+        .logo img {
+            width: 250px;
+            height: 100px;
+            margin-top: -50px;
+        }
+
+        .navbar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #333;
+        }
+        .nav_title p {
+            color: #ffffff;
+            font-size: medium;
+            font-weight: 600;
+        }
+
+        .navlinks {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
         .navlinks .nav_icon img {
             transition: opacity 0.3s ease;
+            margin-right: 0.5rem;
         }
 
         .navlinks.active .nav_icon img {
@@ -70,17 +103,20 @@
 
         .navlinks.active {
             color: #ffffff;
-            border-radius: 8rem;
-            background-color: #6E0501;
+            border-radius: 1rem;
+            background-color: #221E1F;
         }
 
         .navlinks a {
-
-            color: #000
+            color: #000;
+            text-decoration: none;
         }
 
         .navlinks.active a {
-            color: #ffffff; /* Set the text color of active links to white */
+            color: #ffffff; 
+        }
+        .logout-parent{
+            margin-top: -50px;
         }
     </style>
 </head>
@@ -133,7 +169,7 @@
                 <img src="img/basil_add-outline.png"/>
             </div>
             <div class="nav_title">
-                <a style="" href="javascript:void(0)" onclick="MenuAdd(); setActiveNavLink('add-event')">Add Menu</a>
+            <a href="javascript:void(0)" onclick="MenuAdd(); setActiveNavLink('add-event');">Add Menu</a>
             </div>
         </div>
 
