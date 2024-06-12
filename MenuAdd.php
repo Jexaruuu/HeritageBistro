@@ -1,5 +1,6 @@
 <?php
 include ('includes/header.php');
+include ('MenuAddInclude/header.php');
 include ('classes/Menus.php');
 $Menu = new Menus();
 
@@ -57,7 +58,7 @@ $userid = $_SESSION['userid'];
  </div>
                
                 <label for="menu_name">Menu Name</label> <br/>
-                <input type="text" id="menu_name" name="menu_name" required>
+                <input type="text" id="menu_name" name="menu_name" required placeholder="Enter menu name">
             <!-- Category Selection -->
             <div class="parent-flex">
                 <div class="left-container">
@@ -92,7 +93,7 @@ $userid = $_SESSION['userid'];
 
                 <div class="parent-flex">
                     <label for="price">Price:</label> <br/>
-                    <input type="text" id="price" name="price" class="price" required>
+                    <input type="text" id="price" name="price" class="price" required placeholder="Price">
                 </div>
 
                 <div class="parent-flex">
@@ -107,7 +108,7 @@ $userid = $_SESSION['userid'];
            
           <div id="description-parent">
                 <label for="description">Description</label><br/>
-                <textarea id="description" name="description" class="description" required></textarea>
+                <textarea id="description" name="description" class="description" required placeholder="Enter description"></textarea>
             </div>
 
             <!-- Product Description and Image -->

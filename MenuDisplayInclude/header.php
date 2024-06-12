@@ -1,6 +1,17 @@
 
 <style>
 
+.index-parent {
+    width: 100%;
+    height: 200vh;
+    background-image: url('/HeritageBistro/img/Login&SignupBG.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+}
+
 .welcome-header-food{
     
     padding: 3%;

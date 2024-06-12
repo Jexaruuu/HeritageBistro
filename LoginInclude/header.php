@@ -114,7 +114,7 @@ $DB->connectDB();
 }
 .btn:hover {
     background-color: #4b4144;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .form-outline {

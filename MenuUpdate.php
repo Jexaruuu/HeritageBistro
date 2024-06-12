@@ -1,5 +1,6 @@
 <?php
 include ('includes/header.php');
+include ('MenuAddInclude/header.php');
 include ('classes/Menus.php');
 
 $Menu = new Menus();
@@ -135,7 +136,7 @@ $userid = $_SESSION['userid'];
                 <div class="left-container">
                     <!-- Insert Image -->
                     
-                    <button name="btn" id="btn" class="addmenubtn">Add Menu</button>
+                    <button name="btn" id="btn" class="addmenubtn">Update Menu</button>
                 </div>
             </div>
 

@@ -9,14 +9,15 @@
 
 .food-card-body {
     width: 500px;
-    height: 200px;
+    height: 220px;
     background-color: rgba(210, 180, 140, 0.8);
     backdrop-filter: blur(4px);
     display: flex;
-    margin-left: 100px;
-    margin-top: 50px;
     border: 3px solid #FFFFFF;
     border-radius: 10px;
+   margin-left: 100px;
+   margin-top: 70px;
+    float: left;
 }
 
 .food-card-image {
@@ -58,6 +59,7 @@
     color: #FFFFFF;
     cursor: pointer;
     border-radius: 5px;
+    margin-top: -100px;
 }
 .food-category .food-card-text {
     height: 100px;

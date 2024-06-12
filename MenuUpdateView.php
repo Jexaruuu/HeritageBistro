@@ -1,5 +1,6 @@
 <?php
 include ('includes/header.php');
+include ('MenuUpdateViewInclude/header.php');
 include ('classes/Menus.php');
 
 $Menu = new Menus();
@@ -57,7 +58,7 @@ $userid = $_SESSION['userid'];
 
             <h class="food-card-title"> <?php echo $menu['menu_name']; ?></h>
            
-            <p class="food-card-text-price"><?php echo $menu['price']; ?></p>
+            <p class="food-card-text-price"><?php echo $menu['price']; ?><span>Php</span></p>
 
             <p class="food-card-text">
               <?php echo $menu['category']; ?> </p>
