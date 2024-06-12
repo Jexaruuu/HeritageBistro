@@ -59,7 +59,7 @@ if (isset($_POST['btn'])) {
                                     <div class="category-image">
                                         <img src="./img/serving-dish.png"/>
                                     </div>
-                                    <div class="">
+                                    <div class="form-title">
                                         <h>All Menu</h>
                                         <?php
                                         $allMenuCount = count($MenuList);
@@ -131,7 +131,7 @@ if (isset($_POST['btn'])) {
 
                             <div id="menu_items" class="menu-items-container">
                                 <div class="your-menu">
-                                    <p>All Menu</p>
+                                    <p>Select Menu Here</p>
                                 </div>
                                 <?php foreach ($MenuList as $menu) { ?>
                                     <div class="menu-item card" data-category="<?php echo $menu['category']; ?>" onclick="selectMenu(<?php echo $menu['id']; ?>, '<?php echo $menu['menu_name']; ?>', <?php echo $menu['price']; ?>, '<?php echo $menu['image']; ?>')">
