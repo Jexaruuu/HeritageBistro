@@ -10,9 +10,14 @@
 
 .parent-reservation{
 
-
+    width: 100%;
+    height: 143vh;
+    background-color: #c4a27a;
+    background-attachment:scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
-
 }
 
 .left-reservation{

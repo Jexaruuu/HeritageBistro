@@ -1,6 +1,7 @@
 <?php
 
 include ('includes/header.php');
+include ('ReservationInclude/header.php');
 
 
 
@@ -16,13 +17,13 @@ include ('includes/header.php');
 
         <div class="three-div">
             <div class="image">
-                <img src="./img/1f5d796afadc8f9094fccbda5f0fdbf9.jpg" alt=""/>
+                <img src="/HeritageBistro/img/pic1.jpg" alt=""/>
             </div>
             <div class="image">
-                <img src="./img/3e6824c44b033b635d7e22be02dca037.jpg" alt=""/>
+                <img src="/HeritageBistro/img/pic2.jpg" alt=""/>
             </div>
             <div class="image">
-                <img src="./img/82ab0f61694bb4bfd6041d390cb0a694.jpg" alt=""/>
+                <img src="/HeritageBistro/img/pic3.jpg" alt=""/>
             </div>
            
         </div>
@@ -92,7 +93,7 @@ Gourmet City, FL 56789 </p>
                     <div class="reservation-input">
                         <div class="fullname">
                             <label for="customer_name">Full Name:</label><br/>
-                            <input type='text' id='customer_name' name='customer_name' required/>
+                            <input type='text' id='customer_name' name='customer_name' required placeholder="Enter full name"/>
                         </div>
 
                         <div class="time_and_date">
@@ -111,13 +112,13 @@ Gourmet City, FL 56789 </p>
                         <div class="phone_guest">
                             <div class="phonenumber">
                                 <label for="phone_number">Phone Number:</label><br/>
-                                <input type='tel' id='phone_number' name='phone_number' pattern="[0-9]{11}" required/>
+                                <input type="tel" id="phone_number" name="phone_number" placeholder="Enter phone number" required pattern="[\d\s\-\(\)]+"/>
 
                             </div>
 
                             <div class="guest">
                                 <label for="guest">Guests:</label><br/>
-                                <input type='number' id='guest' name='guest' min="1" required/>
+                                <input type='number' id='guest' name='guest' min="1" required placeholder="Guest"/>
 
                             </div>
                         </div>
@@ -128,7 +129,8 @@ Gourmet City, FL 56789 </p>
 
 
               <div class="reservation-footer-submit">
-          <button type="submit" name="btn" id="btn" class="submit_btn_reservation">Book Reservation</button>
+              <button type="submit" name="btn" id="btn" class="backbtn">Back to Menu</button>
+          <button type="submit" name="btn" id="btn" class="submit_btn_reservation" href="index.php">Book Reservation</button>
         </div>
                        
                     </div>
