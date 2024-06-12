@@ -1,5 +1,6 @@
 <?php
 include ('includes/header.php');
+include ('OrderDetailsInclude/header.php');
 include ('classes/Orders.php');
 
 $Order = new Orders();
@@ -31,7 +32,7 @@ $userid = $_SESSION['userid'];
     <div class="welcome-header-food" style="border-bottom: 1px solid rgba(0, 0, 0, 0.55); margin-bottom: 5px;">
         <div class="welcome-food">
             <h>Welcome, <?php echo $username; ?>!</h>
-            <p>View your menu</p>
+            <p>View Order Details</p>
         </div>
     </div>
 

@@ -321,9 +321,13 @@ padding-top: 10%;
     width: 50%;
     padding: 1%;
     margin-bottom: 3%;
+    margin-left: 305px ;
     border-radius: 5px;
-    background-color: white;
-       border: 1px solid rgba(145, 11, 11, 0.2)
+    background-color: rgba(210, 180, 140, 0.8);
+    backdrop-filter: blur(4px);
+       margin-top: 40px;
+       color:#221E1F;
+       border: 3px solid #FFFFFF;
        
 }
 
@@ -363,21 +367,25 @@ padding-top: 10%;
     height: 50px;
     border-radius: 5px;
     border: none;
-    background-color: #9E0505;
+    background-color: #221E1F;
     color: #FFFFFF;
     text-transform: uppercase;
     cursor: pointer;
 }
+.view_btn:hover{
+    background-color: #4b4144;
+    transition: 0.3s;
+}
 
 .receipt{
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(0, 0, 0 ,0.2);
+    background-color: rgba(210, 180, 140, 0.8);
+    backdrop-filter: blur(4px);
     border-radius: 5PX;
-
     width: 50%;
     padding: 1%;
-   
-   
+   margin-left: 330px;
+   margin-top: 15px;
+   border: 3px solid #FFFFFF
 }
 
 .billedto{
@@ -437,7 +445,11 @@ padding-top: 10%;
         height: 40px;
         border:  none;
         border-radius: 5px;
-        background-color: #9E0505;
+        background-color: #221E1F;
         color: #ffffff;
         cursor: pointer;
+    }
+    .received-btn:hover{
+        background-color: #4b4144;
+        transition: 0.3s;
     }
