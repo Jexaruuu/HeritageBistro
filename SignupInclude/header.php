@@ -30,7 +30,7 @@ $DB->connectDB();
 }
 .form-bg {
     width: 23%;
-    height: 84%;
+    height: 88%;
     float: left;
     display: flex;
     align-items: center;

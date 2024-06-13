@@ -53,6 +53,14 @@ if(isset($_POST['btn'])) {
 
           </div>
           <div class="form-outline">
+          </div>
+          <div class="form-outline">
+            <label class="form-label" for="role">Account Type</label><br/>
+                <select name="role" id="role">
+                  <option value=0>Administrator</option>
+                  <option value=1>Staff</option>
+                </select>
+              </div>
          
           <input type="submit" value="Register" name = "btn" id = "btn" class="btn ms-2 mb-2 w-25">
             </form>
