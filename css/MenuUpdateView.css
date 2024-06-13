@@ -9,7 +9,7 @@
 
 .food-card-body {
     width: 500px;
-    height: 220px;
+    height: 400px;
     background-color: rgba(210, 180, 140, 0.8);
     backdrop-filter: blur(4px);
     display: flex;

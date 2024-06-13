@@ -3,7 +3,7 @@
 
 .index-parent {
     width: 100%;
-    height: 200vh;
+    height: 400vh;
     background-image: url('/HeritageBistro/img/Login&SignupBG.jpg');
     background-attachment: fixed;
     background-size: cover;
