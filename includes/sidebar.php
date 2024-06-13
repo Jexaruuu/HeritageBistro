@@ -6,7 +6,7 @@
         <div class="sidenav-section">
             <h2>Dashboard</h2>
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="OrderAdd.php">Make Order</a></li>
                 <li><a href="MenuDisplay.php">View Menu</a></li>
                 <li><a href="OrderDisplay.php">View Orders</a></li>
