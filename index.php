@@ -14,7 +14,7 @@ $userid = $_SESSION['userid'];
     <a href="OrderAdd.php">
       <div class="main-wrapper-card">Make Order</div>
     </a>
-    <a href="OrderAdd.php">
+    <a href="ReservationAdd.php">
       <div class="main-wrapper-card">Make Reservation</div>
     </a>
     <a href="OrderDisplay.php">
