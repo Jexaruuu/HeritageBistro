@@ -19,6 +19,13 @@ $userid = $_SESSION['userid'];
                     <div class="order-left">
                         <div class="order-id">
                             <p>Order ID: <?php echo $order['order_id']; ?> </p>
+                            <p>Status : 
+                        <?php if ($order['status'] == 0) { ?>
+                            Pending
+                        <?php } else { ?>
+                            Received
+                        <?php } ?>
+                    </p>
                         </div>
                         <div class="total-amount">Total Amount: ₱<?php echo number_format($order['total_amount'], 2); ?>
                         </div>
@@ -35,13 +42,6 @@ $userid = $_SESSION['userid'];
                             <?php echo $detail['quantity']; ?> (Subtotal:
                             ₱<?php echo number_format($detail['subtotal'], 2); ?>)
                         </li>
-                        <p>Status : 
-                        <?php if ($order['status'] == 0) { ?>
-                            Pending
-                        <?php } else { ?>
-                            Received
-                        <?php } ?>
-                    </p>
                     <?php } ?>
                 </div>
                 </div>

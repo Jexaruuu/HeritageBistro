@@ -40,7 +40,7 @@ if (isset($_POST['btn'])) {
                     </div>
                     <div class="card-body">
                         <h class="card-title"><?php echo $menu['menu_name']; ?></h>
-                        <p class="card-text">Category : <?php echo $menu['category']; ?></p>
+                        <p class="card-text"><?php echo $menu['category']; ?></p>
                         <p class="card-text">₱<?php echo number_format($menu['price'], 2); ?></p>
                     </div>
                 </div>

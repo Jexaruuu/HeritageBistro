@@ -13,6 +13,13 @@
             </ul>
         </div>
         <div class="sidenav-section">
+            <h2>Reservations</h2>
+            <ul>
+                <li><a href="ReservationAdd.php">Add Reservation</a></li>
+                <li><a href="ReservationDisplay.php">All Reservations</a></li>
+            </ul>
+        </div>
+        <div class="sidenav-section">
             <h2>Customize Menu</h2>
             <ul>
                 <li><a href="MenuAdd.php">Add Menu</a></li>

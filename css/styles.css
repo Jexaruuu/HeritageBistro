@@ -69,14 +69,19 @@
   flex-wrap: wrap;
   width: 75%;
   padding: 2rem 1rem;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  height: 100dvh;
 }
 .menu-container:nth-child(2) {
   width: 25%;
   flex-direction: column;
   justify-content: space-between;
+  height: 100dvh;
+  position: sticky;
 }
 .menu-container .menu-items-details {
-  height: 70vh;
+  height: 50vh;
   overflow-y: scroll;
   scrollbar-width: none;
   padding: 1rem 0;
@@ -527,4 +532,39 @@ textarea {
 .status-form {
   text-align: center;
   margin-top: 20px;
+}
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.reservation-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.reservation-table th, .reservation-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.reservation-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #333;
+}
+
+.reservation-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.reservation-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 600px) {
+  .reservation-table {
+      font-size: 12px;
+  }
 }
