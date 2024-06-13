@@ -95,8 +95,6 @@ box-sizing: border-box;
 }
 
 .menu-items-details{
-
-
     height: 300px;
     overflow-y: auto;
     margin: 2%;
@@ -238,7 +236,6 @@ box-sizing: border-box;
 
 
 .category-clickable{
-
     width: 20%;
     height: 550px;
     display: flex;

@@ -45,42 +45,45 @@ class Orders
     }
     // DISPLAYING ALL ORDERS
     function displayOrders()
-    {
-        global $con;
+{
+    global $con;
 
-        $sql = "SELECT o.id AS order_id, o.total_amount, o.order_date,
+    $sql = "SELECT o.id AS order_id, o.total_amount, o.order_date, o.status,
             d.menu_name, d.price, d.quantity, d.subtotal
             FROM tbl_orders AS o
-            JOIN tbl_order_details AS d ON o.id = d.order_id";
-        $stmt = $con->prepare($sql);
-        $stmt->execute();
+            JOIN tbl_order_details AS d ON o.id = d.order_id 
+            ORDER BY o.order_date DESC";
+    $stmt = $con->prepare($sql);
+    $stmt->execute();
 
-        $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $orders = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-        $formattedOrders = [];
+    $formattedOrders = [];
 
-        foreach ($orders as $order) {
-            $orderId = $order['order_id'];
+    foreach ($orders as $order) {
+        $orderId = $order['order_id'];
 
-            if (!isset($formattedOrders[$orderId])) {
-                $formattedOrders[$orderId] = [
-                    'order_id' => $orderId,
-                    'total_amount' => $order['total_amount'],
-                    'order_date' => $order['order_date'],
-                    'order_details' => []
-                ];
-            }
-
-            $formattedOrders[$orderId]['order_details'][] = [
-                'menu_name' => $order['menu_name'],
-                'price' => $order['price'],
-                'quantity' => $order['quantity'],
-                'subtotal' => $order['subtotal']
+        if (!isset($formattedOrders[$orderId])) {
+            $formattedOrders[$orderId] = [
+                'order_id' => $orderId,
+                'total_amount' => $order['total_amount'],
+                'order_date' => $order['order_date'],
+                'status' => $order['status'],
+                'order_details' => []
             ];
         }
 
-        return array_values($formattedOrders);
+        $formattedOrders[$orderId]['order_details'][] = [
+            'menu_name' => $order['menu_name'],
+            'price' => $order['price'],
+            'quantity' => $order['quantity'],
+            'subtotal' => $order['subtotal']
+        ];
     }
+
+    return array_values($formattedOrders);
+}
+
     // DISPLAY SPECIFIC ORDEr
     function getOrderById($order_id)
     {

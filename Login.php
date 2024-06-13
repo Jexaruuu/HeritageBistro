@@ -1,47 +1,35 @@
-<?php 
-include ('LoginInclude/header.php');
-include('classes/Accounts.php'); 
+<?php
+include ('includes/header.php');
+include ('classes/Accounts.php');
 $Account = new Accounts();
-if (isset ($_REQUEST['btn']))
-{
-$Account -> checkUser($_REQUEST);
+if (isset($_REQUEST['btn'])) {
+  $Account->checkUser($_REQUEST);
 }
 ?>
+
 <div class="login-container">
-
-    <div class="form-wrapper">
-
-<div class="content w-25">
-
-    <div class="form-login">
-      <div class="logo">
-        <img src='./img/HB 1.png' id="logo" alt=''> 
+  <div class="login-wrapper">
+    <form method="POST" class="form-group">
+      <div class="login-logo">
+        <img src='./img/HB 1.png' id="logo" alt=''>
       </div>
-<h class="mb-4">Welcome to Heritage Bistro - Where Tradition Meets Taste. </h>
-<form method="POST">
-    <div class="form-outline">
-      <label class="form-label" for="username">Username :</label><br/>
-        <input type="text" id="username" name="username" class="form-control" placeholder="Enter Username"/>
+      <h2>Welcome to Heritage Bistro - Where Tradition Meets Taste. </h2>
+      <div class="form-input">
+        <label class="form-label" for="username">Username</label>
+        <input type="text" id="username" name="username" class="form-control" placeholder="Enter Username" />
       </div>
-      <div class="form-outline">
-        <label class="form-label" for="password">Password :</label><br/>
-        <input type="password" id="password" name="password" class="form-control" placeholder="Enter Password"/>
+      <div class="form-input">
+        <label class="form-label" for="password">Password</label>
+        <input type="password" id="password" name="password" class="form-control" placeholder="Enter Password" />
       </div>
-      <input type="submit" value="Login" name = "btn" id = "btn" class="btn mb-2">
+      <input type="submit" value="Login" name="btn" id="btn" class="button-primary">
+      <p>Don't have an Account? <a href="Signup.php">Create Account</a></p>
     </form>
-    <div class="create-account">
-      Don't have an Account? <br><a href="Signup.php">Create Account</a>
-    </div>
-
-    </div>
     
-
-
-    
-    </div>
   </div>
-    </div>
-    
-<?php 
+  <div class="login-wrapper"></div>
+</div>
+
+<?php
 include ('includes/footer.php');
 ?>

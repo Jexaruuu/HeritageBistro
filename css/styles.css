@@ -1,0 +1,530 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=PT+Serif+Caption&family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--Brown);
+}
+:root {
+  font-family: "Open Sans", "Roboto", sans-serif;
+  line-height: 1.5;
+
+  background-color: #f6f5f0;
+  color: #2d1f1c;
+
+  --Primary: #84664c;
+  --Secondary: #f3a953;
+
+  --Hover: #6a4f3e;
+  --White: #f6f5f0;
+  --Black: #181818;
+
+  --Warning: #fd9595;
+  --WarningHover: #f83838;
+  --Gray: #dfdddd;
+  --Neutral: #dfdddd;
+  --Bg: #e8e4d8;
+  --Brown: #2d1f1c;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
+.main-container {
+  display: flex;
+}
+.main-wrapper {
+  width: 80%;
+  margin-left: 20%;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.main-wrapper-card {
+  width: 250px;
+  height: 250px;
+  background-color: var(--Primary);
+  border-radius: 25px;
+  padding: 1rem;
+  display: flex;
+  text-align: justify;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--White);
+  font-size: 1.5rem;
+}
+.main-wrapper-card a {
+  color: var(--White);
+}
+/* ORDERS CSS  */
+.order-wrapper {
+  width: 80%;
+  margin-left: 20%;
+  min-height: 100dvh;
+  display: flex;
+}
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  padding: 2rem 1rem;
+}
+.menu-container:nth-child(2) {
+  width: 25%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu-container .menu-items-details {
+  height: 70vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  padding: 1rem 0;
+}
+.menu-container .card-body-invoice {
+  display: flex;
+  align-items: center; /* Vertically center the items */
+  padding: 10px;
+  border: 1px solid #ddd; /* Optional: add some border */
+  margin-bottom: 10px; /* Optional: add some space between cards */
+}
+.menu-container .card-img-invoice {
+  margin-right: 20px; /* Space between image and text */
+}
+.menu-container .card-invoice {
+  flex-grow: 1; /* Take remaining space */
+}
+.menu-container .card-title {
+  font-size: 1.2em;
+  margin: 0;
+}
+.menu-container .shanghai {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.menu-container .remove-img {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+/* CARD FOR POS */
+.menu-container .menu-item {
+  width: 220px;
+  height: 300px;
+  border-radius: 5px;
+  margin: 1%;
+  cursor: pointer;
+  border-radius: 10px;
+  color: #ffffff;
+}
+.menu-container .menu-item.card:hover {
+  box-shadow: 0 0 10px rgba(152, 155, 158, 0.5);
+}
+.menu-container .card-img img {
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+  border-radius: 10px;
+}
+.menu-container .card-body {
+  width: 300px;
+  margin-left: 10px;
+}
+.list-container{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+  padding: 2.5%;
+}
+.list-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.list-wrapper .menu-item {
+  width: 300px;
+  height: 400px;
+  border-radius: 5px;
+  margin: 1%;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(152, 155, 158, 0.5);
+}
+.list-wrapper .card-img img {
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+  border-radius: 10px;
+}
+.list-wrapper .card-body {
+  width: 100%;
+}
+/* ADDING AND UPDATING MENUS FUCKER */
+/* LOGIN AND SIGN UP CSS */
+.login-container {
+  width: 100%;
+  display: flex;
+  height: 100dvh;
+}
+.login-container .login-wrapper {
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.login-container .login-wrapper:nth-child(2) {
+  background-image: url("../img/Login.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh; /* or any specific height */
+}
+
+.login-container .login-logo {
+  width: 30vw;
+}
+.login-container .login-logo img {
+  width: 100%;
+  object-fit: contain;
+}
+.form-group {
+  width: 90%;
+  padding: 3.5%;
+}
+.form-group .login-logo {
+  width: 100%;
+}
+.form-group h2 {
+  font-size: 1.3rem;
+  text-align: left;
+}
+.form-group p {
+  margin-top: 1rem;
+}
+.form-group .form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+.form-group .form-flex {
+  display: flex;
+  gap: 1rem;
+}
+.form-group .form-flex .form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0 0 1rem 0;
+  width: 100%;
+}
+.form-group .login-logo img {
+  width: 100%;
+  object-fit: contain;
+}
+/* SIDE NAV CSS */
+.sidenav {
+  width: 20%;
+  height: 100vh;
+  background-color: var(--Bg);
+  padding: 1rem 1%;
+  color: var(--Black);
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+}
+.sidenav .sidenav-logo {
+  width: 100%;
+}
+.sidenav .sidenav-logo img {
+  width: 100%;
+  object-fit: contain;
+}
+.sidenav .sidenav-section {
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 5px solid var(--Primary);
+  margin-bottom: 10px;
+}
+.sidenav .sidenav-section h2 {
+  margin: 0 0 10px;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.sidenav .sidenav-section ul {
+  list-style: none;
+}
+.sidenav .sidenav-section ul li {
+  width: 100%;
+}
+.sidenav .sidenav-section ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 0.75rem 2rem;
+}
+.sidenav .sidenav-section ul li a:hover {
+  background-color: var(--Hover);
+  color: var(--White);
+  border-radius: 5px;
+}
+.sidenav .logout {
+  padding: 0.75rem 2rem;
+}
+.sidenav .logout:hover {
+  background-color: var(--Hover);
+  color: var(--White);
+  border-radius: 5px;
+}
+body {
+  background-color: var(--White);
+}
+a {
+  text-decoration: none;
+  color: var(--Primary);
+}
+input,
+select,
+textarea {
+  padding: 0.9rem 0.75rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: var(--Gray);
+  color: var(--Black);
+  resize: none;
+  width: 100%;
+}
+.button-primary {
+  width: 100%;
+  padding: 0.75rem 0.5rem;
+  font-size: 0.9rem;
+  background-color: var(--Primary);
+  color: var(--White);
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.button-secondary {
+  width: 100%;
+  padding: 0.75rem 0.5rem;
+  font-size: 0.9rem;
+  color: var(--Primary);
+  outline: none;
+  border-radius: 5px;
+  border: solid 2px var(--Primary);
+  font-weight: bold;
+  cursor: pointer;
+}
+.button-primary:hover {
+  background-color: var(--Hover);
+  color: var(--White);
+}
+.button-warning {
+  width: 100%;
+  padding: 0.75rem 0.5rem;
+  font-size: 0.9rem;
+  background-color: var(--Warning);
+  color: var(--White);
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.button-warning:hover {
+  background-color: var(--WarningHover);
+  color: var(--White);
+}
+.button-secondary:hover {
+  color: var(--Primary);
+  background-color: var(--Gray);
+  border: solid 2px var(--Primary);
+}
+textarea {
+  width: 99.5%;
+  height: 200px;
+}
+.menu-form-group {
+  padding: 1rem;
+}
+.order-wrapper .form-group {
+  width: 80%;
+  margin: auto;
+  background-color: var(--Bg);
+  border-radius: 25px;
+}
+/* <input type="file" id="menu_image" name="menu_image" class="menu_image" required> */
+
+.menu-container1{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20%;
+  gap: 1rem;
+}
+.menu-container1 .menu-item {
+  width: 20%;
+  height: 50vh;
+  border-radius: 5px;
+  gap: 1rem;
+  margin: 1rem 0;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.menu-container1 .menu-item.card:hover {
+  box-shadow: 0 0 10px rgba(152, 155, 158, 0.5);
+}
+.menu-container1 .card-img{
+  width: 100%;
+  height: 25dvh;
+}
+.menu-container1 .card-img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.menu-container1 .card-body {
+  width: 100%;
+  height: 15dvh;
+  content: "";
+}
+.menu-container1 .actions{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+/* ORDER VIEWS AND RECEIPT */
+.order-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-width: 60vw;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+.order-summary{
+  display: flex;
+  justify-content: space-between;
+}
+.order-amount-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.order-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-id,
+.total-amount,
+.order-date {
+  margin-bottom: 5px;
+}
+
+.order-details {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.order-details li {
+  margin-bottom: 5px;
+}
+
+.order-actions {
+  margin-top: 10px;
+}
+.receipt {
+  padding: 20px;
+}
+
+.billedto {
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.billedto p {
+  margin: 5px 0;
+  font-size: 1.1em;
+}
+
+.billedto .order-id, 
+.billedto .order-date, 
+.billedto .order-total {
+  font-weight: bold;
+}
+
+.receipt-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.receipt-table th, 
+.receipt-table td {
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  text-align: center;
+  font-size: 1em;
+}
+
+.receipt-table th {
+  background-color: #f8f8f8;
+  color: #555;
+  text-transform: uppercase;
+}
+
+.receipt-table td p {
+  margin: 0;
+}
+
+.menu-name-column, 
+.menu-price-column, 
+.menu-qty-column, 
+.menu-subtotal-column {
+  text-align: center;
+}
+
+.summary-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-top: 2px solid #e0e0e0;
+  font-size: 1.2em;
+}
+
+.summary-section .subtotal, 
+.summary-section .status {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.status-form {
+  text-align: center;
+  margin-top: 20px;
+}
