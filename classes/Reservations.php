@@ -5,11 +5,11 @@ class Reservations {
 
     // Function to insert a reservation into database
     public function CustomerReservationInsert($req) {
-        global $con; // Ensure $con is globally accessible or passed correctly
+        global $con;
 
         $customer_name = $req['customer_name'];
-        $time = $req['time'];
-        $date = $req['date'];
+        $time = date('h:i A', strtotime($req['time'])); // Format time as 12hrs with AM/PM
+        $date = date('m/d/Y', strtotime($req['date'])); // Format date as mm/dd/yyyy
         $phone_number = $req['phone_number'];
         $guest = $req['guest'];
 
@@ -35,7 +35,7 @@ class Reservations {
 
     // Function to retrieve reservations from database
     public function getReservations() {
-        global $con; // Ensure $con is globally accessible or passed correctly
+        global $con;
 
         try {
             // Prepare and execute the SQL statement
