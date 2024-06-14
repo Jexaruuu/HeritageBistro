@@ -1,10 +1,11 @@
 <?php
 
 class Reservations {
-    public $id;
+    public $id; // Assuming this is intended for future use
 
-    function CustomerReservationInsert($req) {
-        global $con;
+    // Function to insert a reservation into database
+    public function CustomerReservationInsert($req) {
+        global $con; // Ensure $con is globally accessible or passed correctly
 
         $customer_name = $req['customer_name'];
         $time = $req['time'];
@@ -25,12 +26,16 @@ class Reservations {
             $stmt->execute();
 
         } catch (PDOException $e) {
-            // Output a JavaScript snippet to trigger an alert for error
+            // Log the error to a file or database
+            error_log('PDOException: ' . $e->getMessage());
+            // Display a generic error message to the user
+            echo "<script>alert('An error occurred. Please try again later.');</script>";
         }
     }
 
-    function getReservations() {
-        global $con;
+    // Function to retrieve reservations from database
+    public function getReservations() {
+        global $con; // Ensure $con is globally accessible or passed correctly
 
         try {
             // Prepare and execute the SQL statement
@@ -42,8 +47,9 @@ class Reservations {
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
         } catch (PDOException $e) {
             // Handle the error
+            error_log('PDOException: ' . $e->getMessage());
             echo "<script>alert('Error: " . $e->getMessage() . "');</script>";
-            return [];
+            return []; // Return an empty array in case of error
         }
     }
 }
